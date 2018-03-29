@@ -1,6 +1,6 @@
 # Girl Effect Theming
 
-This theming pack with assist developers with theming the core authentication service.
+This theming pack will assist developers with theming the core authentication service.
 
 ## Get started
 
