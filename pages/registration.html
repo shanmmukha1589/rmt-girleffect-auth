@@ -151,13 +151,24 @@
                             <div class="Field-message"></div>
                             <input type="hidden" name="form-0-id" id="id_form-0-id" class=" HiddenInput " />
                         </div>
-                        <div class=" Form-item Field ModelChoiceField  Field--required "><label class=" Field-label" for="id_form-1-question">Question:</label><div class="Field-item"> <select name="form-1-question" id="id_form-1-question" required="required" class=" Select ">
-                        <option value="" selected>Select a question</option>
-                        <option value="1">What is your favourite colour?</option>
-                        <option value="2">What is your mother&#39;s maiden name?</option>
-                        </select></div><div class="Field-message"></div></div>
-                        <div class=" Form-item Field CharField  Field--required "><label class=" Field-label" for="id_form-1-answer">Answer:</label><div class="Field-item"> <textarea name="form-1-answer" cols="40" rows="10" id="id_form-1-answer" required="required" class=" Textarea ">
-                        </textarea></div><div class="Field-message"></div><input type="hidden" name="form-1-id" id="id_form-1-id" class=" HiddenInput " /></div>
+                        <div class=" Form-item Field ModelChoiceField  Field--required ">
+                            <label class=" Field-label" for="id_form-1-question">Question:</label>
+                            <div class="Field-item"> 
+                                <select name="form-1-question" id="id_form-1-question" required="required" class=" Select ">
+                                    <option value="" selected>Select a question</option>
+                                    <option value="1">What is your favourite colour?</option>
+                                    <option value="2">What is your mother&#39;s maiden name?</option>
+                                </select>
+                            </div>
+                            <div class="Field-message"></div>
+                        </div>
+                        <div class=" Form-item Field CharField  Field--required ">
+                            <label class=" Field-label" for="id_form-1-answer">Answer:</label>
+                            <div class="Field-item"> 
+                                <textarea name="form-1-answer" cols="40" rows="10" id="id_form-1-answer" required="required" class=" Textarea "></textarea>
+                            </div>
+                            <div class="Field-message"></div>
+                        </div>
                     </div>
 
                     <div class="Form-buttons">
