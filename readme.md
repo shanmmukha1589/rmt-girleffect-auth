@@ -4,14 +4,18 @@ This theming pack will assist developers with theming the core authentication se
 
 ## Get started
 
-### Install Node.js:
+### Running locally
+
+* It's best to run a small static node server locally.
+
+#### Install Node.js:
 
 * Use your favourite package manager to install Node:
 https://nodejs.org/en/download/package-manager/
 
-### Running locally
+#### Install static-server:
 
-* It's best to run a small static node server locally. You can do this by typing the following in your terminal:
+* You can do this by typing the following in your terminal:
 
 `npm -g install static-server`
 
