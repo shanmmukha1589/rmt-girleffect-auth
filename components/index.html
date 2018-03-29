@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Girl Effect: Theming</title>
+        <link rel="icon" type="image/x-icon" href="/docs/img/favicon.ico" sizes="32x32">
+        <link rel="stylesheet" type="text/css" href="/docs/css/style.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <nav role="navigation">
+                <img src="/docs/img/logo.jpg" class="logo">
+                <ul>
+                    <li><a href="/">Introduction</a></li>
+                    <li><a href="/components/" class="on">Components</a></li>
+                    <li>
+                        <a href="/pages/">Pages</a>
+                        <ul>
+                            <li><a href="/pages/login.html" target="_blank">Login</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div id="content" class="content" role="main">
+                <h1>Components</h1>
+                <p>Remember that can change these attributes to whatever you like. You can read more <a href="/pages/" class="on">here</a> about implementing your own theme.</p>
+                <h2 id="global">Global</h2>
+                <p>We use the following global elements:</p>
+                <ul>
+                    <li><span class="code">*</span> for box-sizing</li>
+                    <li><span class="code">html, body</span> for resets, global font sizes and colours</li>
+                    <li><span class="code">.Container</span> is the main wrapper which contains <span class="code">.Header</span>, <span class="code">.Content</span> and <span class="code">.Footer</span></li>
+                </ul>
+                <hr />
+                <h2 id="header">Header</h2>
+                <p>The header has 3 main elements: branding, title and links, with one or two children:</p>
+                <ul>
+                    <li><span class="code">.Header</span> is the parent container where you can define things like background colour and images.</li>
+                    <li><span class="code">.Header-branding</span> is the container of the logo.</li>
+                    <li><span class="code">.Header-branding-image</span> is the class of the logo.</li>
+                    <li><span class="code">.Header-title</span> is the container of the <span class="code">h1</span> in the title.</li>
+                    <li><span class="code">.Header-links</span> is an extra section for navigational links.</li>
+                </ul>
+                <hr />
+                <h2 id="footer">Footer</h2>
+                <p>Footers are generally pretty straight forward, so it only has the <span class="code">.Footer</span> parent class with one <span class="code">p</span> child element which contains the text.</p>
+                <hr />
+                <h2 id="typography">Typography</h2>
+                <p>We use the following typographic elements throughout:</p>
+                <ul>
+                    <li><span class="code">body, textarea, select</span> for resets &amp; globals, add or remove at will</li>
+                    <li><span class="code">a, a:visited</span> for links</li>
+                    <li><span class="code">h1</span> for page titles</li>
+                    <li><span class="code">h2</span> for sub titles</li>
+                    <li><span class="code">p, ul</span> for text</li>
+                    <li><span class="code">hr</span> for dividers</li>
+                    <li><span class="code">.center</span> for centre-aligning text</li>
+                </ul>
+                <p>You might want to have more than that, especially for enhanced phones, so you can add anything you want. For instance:</p>
+                <ul>
+                    <li><span class="code">@font-face</span> for custom fonts which you'll just reference in your elements</li>
+                </ul>
+                <hr />
+                <h2 id="forms">Forms</h2>
+                <p>There are quite a few forms, and most form elements that you are used to get used one way or another:</p>
+                <ul>
+                    <li><span class="code">.Form</span> is the parent class of any form</li>
+                    <li><span class="code">.Form-item</span> is the parent class of every form item, and contains the <span class="code">.Field-label</span> and <span class="code">.Field-item</span> elements</li>
+                    <li>Please note the <span class="code">.Field--required</span> class (for validation) is a sibling of <span class="code">.Form-item</span>. Everyone likes to surface errors in different ways, so this provides that added flexibility</li>
+                    <li><span class="code">.Field-item</span> is the parent of the <span class="code">input</span> or <span class="code">select</span> etc</li>
+                    <li>Please note upon server-side validation, 2 more child elements get created inside <span class="code">.Field-item</span>. They are <span class="code">.errorlist</span> which is a <span class="code">ul</span> that contains the errors, and <span class="code">.Field-message</span> which might contain some text about the error or an additional validation message.
+                </ul>
+                <hr />
+                <h2 id="buttons">Buttons</h2>
+                <p>You can probably argue buttons should be part of forms, but they can be used outside forms too:</p>
+                <ul>
+                    <li><span class="code">.Form-buttons</span> is the parent class of the button container in a form</li>
+                    <li><span class="code">.Button</span> is the class of an <span class="code">input</span> or any <span class="code">a</span> that appears like a button</li>
+                </ul>
+                <hr />
+                <h2 id="additional">Additional</h2>
+                <p>Below forms there are sometimes a need for additional navigation or supplementary text:</p>
+                <ul>
+                    <li><span class="code">.Additional-text</span> is applied on <span class="code">p</span> elements below forms, where applicable</li>
+                </ul>
+            </div>
+            <aside class="sidebar">
+                <h3><a href="#global">Global</a></h3>
+                <h3><a href="#header">Header</a></h3>
+                <h3><a href="#footer">Footer</a></h3>
+                <h3><a href="#typography">Typography</a></h3>
+                <h3><a href="#forms">Forms</a></h3>
+                <h3><a href="#buttons">Buttons</a></h3>
+                <h3><a href="#additional">Additional</a></h3>
+            </aside>
+        </div>
+        <footer role="contentinfo">
+            &copy; Girl Effect | Company No.07516619 | Charity No.1141155
+        </footer>
+    </body>
+</html>

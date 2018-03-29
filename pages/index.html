@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Girl Effect: Theming</title>
+        <link rel="icon" type="image/x-icon" href="/docs/img/favicon.ico" sizes="32x32">
+        <link rel="stylesheet" type="text/css" href="/docs/css/style.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <nav role="navigation">
+                <img src="/docs/img/logo.jpg" class="logo">
+                <ul>
+                    <li><a href="/">Introduction</a></li>
+                    <li><a href="/components/">Components</a></li>
+                    <li>
+                        <a href="/pages/" class="on">Pages</a>
+                        <ul>
+                            <li><a href="/pages/login.html" target="_blank">Login</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div id="content" class="content" role="main">
+                <h1>Pages</h1>
+                <h3>How we load the CSS, once received</h3>
+                <p>To cater for as many devices as possible, we start with a feature phone stylesheet that is as small as possible, but covers our bases. Once that is done, we <strong>add</strong> the enhanced stylesheet below that (using feature detection). The enhanced stylesheet then <strong>inherits</strong> from the feature phone styling.</p>
+                <p class="warning">Please note that both your feature and enhanced stylesheets will <strong>inherit</strong> from the default theme.</p>
+                <h3>How to go about theming the pages</h3>
+                <ul>
+                    <li>We've included the <a href="/pages/css/theme.feature.css" class="on">feature</a> and <a href="/pages/css/theme.enhanced.css" class="on">enhanced</a> stylesheets into the <span class="code">head</span> of every page below in exactly the same way it will be done once integrated. </li>
+                    <li>They are located at <span class="code">/pages/css/theme.feature.css</span> and <span class="code">/pages/css/theme.enhanced.css</span></li>
+                    <li>You can now open those up in your favourite editor and start creating your own theme.</li>
+                </ul>
+                <p class="message">Both these template files look exactly the same, with the same classes. You'll only use some of them for feature styling. Please make sure to remove the unused declarations. <br /><br />Feel free to add whatever you need to either of these files to get to your own perfectly customized theme.</p>
+                <h3>Get started with your theme</h3>
+                <ul>
+                    <li><a href="/pages/login.html" target="_blank">Login</a></li>
+                </ul>
+                <h3>Sending your theme</h3>
+                <p>Please remember to send along any images and fonts you reference in your CSS files.</p>
+            </div>
+        </div>
+        <footer role="contentinfo">
+            &copy; Girl Effect | Company No.07516619 | Charity No.1141155
+        </footer>
+    </body>
+</html>

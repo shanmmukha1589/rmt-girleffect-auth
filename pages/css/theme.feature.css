@@ -1,0 +1,286 @@
+/*  GLOBAL  */
+
+    * {
+        /* Box sizing etc */
+
+    }
+
+    html, body {
+        /* Resets etc */
+
+    }
+
+    body {
+        /* Resets, spacing etc */
+
+    }
+
+/*  TYPOGRAPHY  */
+
+    @font-face {
+        /* You can define as many fonts as you want */
+        /* Best to only have this for enhanced devices though, load time and support being the main consideration */
+    
+    }
+
+    body,
+    textarea,
+    select {
+        /* Global font declarations, sizing, colors etc */
+
+    }
+
+    strong {
+        /* You might want to set your own custom font for bolds or strongs */
+
+    }
+
+    a,
+    a:visited {
+
+    }
+
+    a:hover {
+
+    }
+
+    h1 {
+
+    }
+
+    h2 {
+
+    }
+
+    p,
+    ul {
+
+    }
+
+    hr {
+        /* Dividers */
+
+    }
+
+    .center {
+        text-align: center;
+    }
+
+/*  STRUCTURE & GENERAL  */
+
+    .Container {
+
+    }
+
+    .List {
+
+    }
+
+    .List li {
+
+    }
+
+    .QR {
+
+    }
+
+    .QR-image {
+
+    }
+
+    .Tokens {
+
+    }
+
+    .Tokens li {
+
+    }
+
+    .Tokens:after {
+
+    }
+
+/*  HEADER  */
+
+    .Header {
+        
+    }
+
+    .Header-branding {
+
+    }
+
+    .Header-branding-image {
+
+    }
+
+    .Header-title {
+
+    }
+
+    .Header-title h1 {
+
+    }
+
+    .Header-links {
+
+    }
+
+/*  FOOTER  */
+
+    .Footer {
+
+    }
+
+    .Footer p {
+
+    }
+
+/*  FORMS  */
+
+    .Form {
+
+    }
+
+    .Form .Field {
+
+    }
+
+    .Form .Field-item {
+
+    }
+
+    .Form .Field-label {
+
+    }
+
+    .Form .Field-message {
+
+    }
+
+    .Form .Field .TextInput,
+    .Form .Field .PasswordInput,
+    .Form .Field .EmailInput,
+    .Form .Field .DateInput,
+    .Form .Field .vDateField,
+    .Form .Field .NumberInput,
+    .Form .Field .Textarea {
+
+    }
+
+    .Form .Field .Textarea {
+        /* You might want to set the height seperately */
+
+    }
+
+    .Form .TypedChoiceField,
+    .Form .ModelChoiceField {
+        /* Select boxes */
+    }
+
+    .Form .TypedChoiceField .Select,
+    .Form .ModelChoiceField .Select {
+
+    }
+
+    .Form .BooleanField {
+        /* Check boxes */
+    }
+
+    .Form .BooleanField .Field-item .CheckboxInput {
+
+    }
+
+    .Form .Field--required input {
+        /* Validation */
+
+    }
+
+    .Form .Field-message--error.Field--required .Field-item input {
+        /* Validation */
+
+    }
+
+    .Form-buttons {
+
+    }
+
+/*  BUTTONS  */
+
+    .Button {
+
+    }
+
+    .Button--warning {
+        /* Modifier class for a warning button */
+
+    }
+
+    .Button:hover {
+
+    }
+
+/*  MESSAGES  */
+
+    .Messages {
+
+    }
+
+    .Messages .Message {
+
+    }
+
+    .Messages .Message--success {
+
+    }
+
+    .Messages .Message--error, 
+    .Messages .Message--warning {
+
+    }
+
+    .errorlist {
+        /* Server-side validation */
+
+    }
+
+    .errorlist li {
+
+    }
+
+/*  MENU  */
+
+    .Menu {
+
+    }
+
+    .Menu-title {
+
+    }
+
+    .Menu-title h1 {
+
+    }
+
+    .Menu-list {
+
+    }
+
+    .Menu-item {
+
+    }
+
+    .Menu-item a {
+
+    }
+
+    .Menu-item a:hover {
+        
+    }
+
+/*  MEDIA QUERIES  */
+
+    @media (min-width: 40em) {
+        /* You might want to cater for desktops as well, even just high-level */
+        
+    }
