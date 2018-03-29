@@ -38,4 +38,4 @@ completely, and have different HTML altogether. This approach will take longer t
 
 ## Note
 
-Please make sure you cater for both feature and enhanced devices, so please provide 2 stylesheets as per the theming advice.
+Please make sure you cater for both feature and enhanced devices, so please provide 2 stylesheets as per the theming advice on `pages`.
