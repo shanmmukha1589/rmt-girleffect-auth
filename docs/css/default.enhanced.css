@@ -11,13 +11,13 @@ body {
 
 @font-face {
   font-family: Lineto;
-  src: url("/static/authentication_service/fonts/lineto-circular-book.12d486e1e384.woff"); }
+  src: url("/docs/fonts/lineto-circular-book.12d486e1e384.woff"); }
 @font-face {
   font-family: LinetoMedium;
-  src: url("/static/authentication_service/fonts/lineto-circular-medium.83ad4cf8ef02.woff"); }
+  src: url("/docs/fonts/lineto-circular-medium.83ad4cf8ef02.woff"); }
 @font-face {
   font-family: LinetoBold;
-  src: url("/static/authentication_service/fonts/lineto-circular-bold.0f01eae4be59.woff"); }
+  src: url("/docs/fonts/lineto-circular-bold.0f01eae4be59.woff"); }
 body,
 textarea,
 select {

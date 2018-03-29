@@ -83,6 +83,7 @@ nav ul ul {
 
 nav ul li li {
     padding-top: 5px;
+    padding-bottom: 0;
 }
 
 nav ul li li a {
