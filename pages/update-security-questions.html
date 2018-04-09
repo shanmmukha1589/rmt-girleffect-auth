@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title>Update Password</title>
+        <title>Update Security Questions</title>
         <link rel="stylesheet" type="text/css" href="/docs/css/default.basic.css" />
         <link rel="stylesheet" type="text/css" href="/pages/css/theme.feature.css" />
         <script type="text/javascript">
@@ -21,31 +21,46 @@
                     <img width="70px" src="/docs/img/default.basic.png" class="Header-branding-image">
                 </div>
                 <div id="title" class="Header-title">
-                    <h1>Update Your Password</h1>
+                    <h1>Update Security Questions</h1>
                 </div>
                 <div class="Header-links"></div>
             </div><!--/header-->
             
             <div id="content" class="Content">
                 <form method="post" class="Form">
-                    <div class=" Form-item Field CharField  Field--required ">
-                        <label class=" Field-label" for="id_old_password">Old password:</label>
+                    <div class=" Form-item Field ModelChoiceField  Field--required ">
+                        <label class=" Field-label" for="id_form-0-question">Question:</label>
                         <div class="Field-item"> 
-                            <input type="password" name="old_password" autofocus required="required" id="id_old_password" class=" PasswordInput " />
+                            <select name="form-0-question" id="id_form-0-question" required="required" class=" Select ">
+                                <option value="" selected>Select a question</option>
+                                <option value="1">What is your favourite colour?</option>
+                                <option value="2">What is your mother&#39;s maiden name?</option>
+                            </select>
                         </div>
                         <div class="Field-message"></div>
                     </div>
                     <div class=" Form-item Field CharField  Field--required ">
-                        <label class=" Field-label" for="id_new_password1">New password:</label>
+                        <label class=" Field-label" for="id_form-0-answer">Answer:</label>
                         <div class="Field-item"> 
-                            <input type="password" name="new_password1" help_text="" required="required" id="id_new_password1" class=" PasswordInput " />
+                            <textarea name="form-0-answer" cols="40" rows="10" id="id_form-0-answer" required="required" class=" Textarea "></textarea>
+                        </div>
+                        <div class="Field-message"></div>
+                    </div>
+                    <div class=" Form-item Field ModelChoiceField  Field--required ">
+                        <label class=" Field-label" for="id_form-1-question">Question:</label>
+                        <div class="Field-item"> 
+                            <select name="form-1-question" id="id_form-1-question" required="required" class=" Select ">
+                                <option value="" selected>Select a question</option>
+                                <option value="1">What is your favourite colour?</option>
+                                <option value="2">What is your mother&#39;s maiden name?</option>
+                            </select>
                         </div>
                         <div class="Field-message"></div>
                     </div>
                     <div class=" Form-item Field CharField  Field--required ">
-                        <label class=" Field-label" for="id_new_password2">New password confirmation:</label>
+                        <label class=" Field-label" for="id_form-1-answer">Answer:</label>
                         <div class="Field-item"> 
-                            <input type="password" name="new_password2" required="required" id="id_new_password2" class=" PasswordInput " />
+                            <textarea name="form-1-answer" cols="40" rows="10" id="id_form-1-answer" required="required" class=" Textarea "></textarea>
                         </div>
                         <div class="Field-message"></div>
                     </div>

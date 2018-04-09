@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <title>Update Password</title>
+        <title>Delete Your Account</title>
         <link rel="stylesheet" type="text/css" href="/docs/css/default.basic.css" />
         <link rel="stylesheet" type="text/css" href="/pages/css/theme.feature.css" />
         <script type="text/javascript">
@@ -21,40 +21,26 @@
                     <img width="70px" src="/docs/img/default.basic.png" class="Header-branding-image">
                 </div>
                 <div id="title" class="Header-title">
-                    <h1>Update Your Password</h1>
+                    <h1>Delete Your Account</h1>
                 </div>
                 <div class="Header-links"></div>
             </div><!--/header-->
             
             <div id="content" class="Content">
-                <form method="post" class="Form">
-                    <div class=" Form-item Field CharField  Field--required ">
-                        <label class=" Field-label" for="id_old_password">Old password:</label>
+                <form method="post" class="Form" >
+                    <div class=" Form-item Field CharField ">
+                        <label class=" Field-label" for="id_reason">Please tell use why you want your account deleted:</label>
                         <div class="Field-item"> 
-                            <input type="password" name="old_password" autofocus required="required" id="id_old_password" class=" PasswordInput " />
-                        </div>
-                        <div class="Field-message"></div>
-                    </div>
-                    <div class=" Form-item Field CharField  Field--required ">
-                        <label class=" Field-label" for="id_new_password1">New password:</label>
-                        <div class="Field-item"> 
-                            <input type="password" name="new_password1" help_text="" required="required" id="id_new_password1" class=" PasswordInput " />
-                        </div>
-                        <div class="Field-message"></div>
-                    </div>
-                    <div class=" Form-item Field CharField  Field--required ">
-                        <label class=" Field-label" for="id_new_password2">New password confirmation:</label>
-                        <div class="Field-item"> 
-                            <input type="password" name="new_password2" required="required" id="id_new_password2" class=" PasswordInput " />
+                            <input type="text" name="reason" id="id_reason" class=" TextInput " />
                         </div>
                         <div class="Field-message"></div>
                     </div>
                     <div class="Form-buttons">
-                        <input type="submit" value="Update" class="Button" />
+                        <input type="submit" value="Delete account?" class="Button" />
                     </div>
                 </form>
                 <p class="Additional-text">
-                    <a href="#">Back</a>
+                    <a href="/profile/edit/">Back</a>
                 </p>
             </div>
             
