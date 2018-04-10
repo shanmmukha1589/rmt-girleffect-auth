@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Enable Two-Factor Authentication</title>
+        <link rel="stylesheet" type="text/css" href="/docs/css/default.basic.css" />
+        <link rel="stylesheet" type="text/css" href="/pages/css/theme.feature.css" />
+        <script type="text/javascript">
+            var CutsTheMustard = 'querySelector' in document && 'localStorage' in window && 'addEventListener' in window;
+            if (CutsTheMustard) {
+                /* COMMENT THE BELOW OUT TO ONLY LOOK AT FEATURE PHONE, OR DISABLE JAVASCRIPT IN YOUR BROWSER */
+                document.write('<link rel="stylesheet" type="text/css" href="/docs/css/default.enhanced.css" />');
+                document.write('<link rel="stylesheet" type="text/css" href="/pages/css/theme.enhanced.css" />');
+            }
+        </script>
+    </head>
+    <body>
+        <div id="container" class="Container">
+
+            <div id="header" class="Header">
+                <div id="branding" class="Header-branding">
+                    <img width="70px" src="/docs/img/default.basic.png" class="Header-branding-image">
+                </div>
+                <div id="title" class="Header-title">
+                    <h1>Enable Two-Factor Authentication</h1>
+                </div>
+                <div class="Header-links"></div>
+            </div><!--/header-->
+            
+            <div id="content" class="Content">
+                <p>You are about to take your account security to the next level. Follow the steps in this wizard to enable two-factor authentication.</p>
+                <p class="QR"><img src="{{ QR_URL }}" class="QR-image" alt="QR Code" /></p>
+                <p class="alert alert-warning" role="alert">We've encountered an issue with the selected authentication method. Please go back and verify that you entered your information correctly, try again, or use a different authentication method instead. If the issue persists, contact the site administrator.</p>
+                <button type="submit" class="Button">Next</button>
+            </div>
+            
+            <div id="footer" class="Footer">
+                <p>&copy; Girl Effect | Company No.07516619 | Charity No.1141155</p>
+            </div><!--/footer-->
+            
+        </div><!--/container-->
+    </body>
+</html>

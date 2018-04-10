@@ -16,23 +16,7 @@
                 <ul>
                     <li><a href="/">Introduction</a></li>
                     <li><a href="/components/" class="on">Components</a></li>
-                    <li>
-                        <a href="/pages/">Pages</a>
-                        <ul>
-                            <li><a href="/pages/login.html" target="_blank">Login</a></li>
-                            <li><a href="/pages/registration.html" target="_blank">Registration</a></li>
-                            <li><a href="/pages/reset-password.html" target="_blank">Reset Password</a></li>
-                            <li><a href="/pages/reset-password-confirm.html" target="_blank">Reset Password Confirm</a></li>
-                            <li><a href="/pages/profile-edit.html" target="_blank">Profile - Edit</a></li>
-                            <li><a href="/pages/update-password.html" target="_blank">Profile - Update Password</a></li>
-                            <li><a href="/pages/update-security-questions.html" target="_blank">Profile - Update Security Questions</a></li>
-                            <li><a href="/pages/delete-account.html" target="_blank">Profile - Delete Account</a></li>
-                            <li><a href="/pages/redirect-issue.html" target="_blank">Oops</a></li>
-                            <li><a href="/pages/lockout.html" target="_blank">Lockout</a></li>
-                            <li><a href="/pages/authorize.html" target="_blank">OIDC - Authorize</a></li>
-                            <li><a href="/pages/2fa-account-security.html" target="_blank">2FA - Account Security</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="/pages/">Pages</a></li>
                 </ul>
             </nav>
             <div id="content" class="content" role="main">
@@ -76,10 +60,17 @@
                 </ul>
                 <hr />
                 <h2 id="list">List</h2>
-                <p>The <span class="code">.List</span> element is used in the OIDC Authorize page. It's just a text list, but the classes are there for you to change:</p>
+                <p>The <span class="code">.List</span> element is used in the OIDC Authorize page. It's just a text <span class="code">ul</span>, but the classes are there for you to change:</p>
                 <ul>
                     <li><span class="code">.List</span> is the parent class</li>
                     <li><span class="code">li</span> is the child, which contains <span class="code">strong</span> and <span class="code">small</span> elements</li>
+                </ul>
+                <hr />
+                <h2 id="tokens">Tokens</h2>
+                <p>The <span class="code">.Tokens</span> element is used in the 2FA Tokens page. It's just a text <span class="code">ul</span>, but the classes are there for you to change:</p>
+                <ul>
+                    <li><span class="code">.Tokens</span> is the parent class</li>
+                    <li><span class="code">li</span> is the child</li>
                 </ul>
                 <hr />
                 <h2 id="forms">Forms</h2>
@@ -113,6 +104,13 @@
                     <li><span class="code">.Menu-list</span> is a child of <span class="code">.Menu</span> and the parent of the menu items. It is a <span class="code">ul</span> element.</li>
                     <li><span class="code">.Menu-item</span> is a child of <span class="code">.Menu-list</span> and the element of each menu item. It is a <span class="code">li</span> element.</li>
                 </ul>
+                <hr />
+                <h2 id="qr">QR</h2>
+                <p>The QR image gets generated within the 2FA section. The elements are:</p>
+                <ul>
+                    <li><span class="code">.QR</span> is the parent and is a <span class="code">p</span> element.</li>
+                    <li><span class="code">.QR-image</span> is a child of <span class="code">.QR</span> and is an <span class="code">img</span> element</li>
+                </ul>
             </div>
             <aside class="sidebar">
                 <h3><a href="#global">Global</a></h3>
@@ -120,10 +118,12 @@
                 <h3><a href="#footer">Footer</a></h3>
                 <h3><a href="#typography">Typography</a></h3>
                 <h3><a href="#list">List</a></h3>
+                <h3><a href="#tokens">Tokens</a></h3>
                 <h3><a href="#forms">Forms</a></h3>
                 <h3><a href="#buttons">Buttons</a></h3>
                 <h3><a href="#additional">Additional</a></h3>
                 <h3><a href="#menu">Menu</a></h3>
+                <h3><a href="#qr">QR</a></h3>
             </aside>
         </div>
         <footer role="contentinfo">
