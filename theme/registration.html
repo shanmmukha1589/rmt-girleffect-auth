@@ -15,169 +15,171 @@
         </script>
     </head>
     <body>
-        <div id="container" class="Container">
+        <div id="wrap" class="Registration">
+            <div id="container" class="Container">
 
-            <div id="header" class="Header">
-                <div id="branding" class="Header-branding">
-                    <img width="70px" src="/docs-static/img/default.basic.png" class="Header-branding-image">
-                </div>
-                <div id="title" class="Header-title">
-                    <h1>Registration</h1>
-                </div>
-                <div class="Header-links"></div>
-            </div><!--/header-->
-            
-            <div id="content" class="Content">
+                <div id="header" class="Header">
+                    <div id="branding" class="Header-branding">
+                        <img width="70px" src="/docs-static/img/default.basic.png" class="Header-branding-image">
+                    </div>
+                    <div id="title" class="Header-title">
+                        <h1>Registration</h1>
+                    </div>
+                    <div class="Header-links"></div>
+                </div><!--/header-->
+                
+                <div id="content" class="Content">
 
-                <form action="" method="post" class="Form">
-                    <div class="required Form-item Field CharField  Field--required ">
-                        <label class=" Field-label required" for="id_username">Username:</label>
-                        <div class="Field-item"> 
-                            <input type="text" name="username" maxlength="150" autofocus required="required" id="id_username" class=" TextInput " />
-                        </div>
-                        <div class="Field-message">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</div>
-                    </div>
-                    <div class=" Form-item Field CharField ">
-                        <label class=" Field-label" for="id_first_name">First name:</label>
-                        <div class="Field-item"> 
-                            <input type="text" name="first_name" maxlength="30" id="id_first_name" class=" TextInput " />
-                        </div>
-                        <div class="Field-message"></div>
-                    </div>
-                    <div class=" Form-item Field CharField ">
-                        <label class=" Field-label" for="id_last_name">Last name:</label>
-                        <div class="Field-item"> 
-                            <input type="text" name="last_name" maxlength="30" id="id_last_name" class=" TextInput " />
-                        </div>
-                        <div class="Field-message"></div>
-                    </div>
-                    <div class=" Form-item Field EmailField ">
-                        <label class=" Field-label" for="id_email">Email address:</label>
-                        <div class="Field-item"> 
-                            <input type="email" name="email" maxlength="254" id="id_email" class=" EmailInput " />
-                        </div>
-                        <div class="Field-message"></div>
-                    </div>
-                    <div class=" Form-item Field CharField ">
-                        <label class=" Field-label" for="id_nickname">Nickname:</label>
-                        <div class="Field-item"> 
-                            <input type="text" name="nickname" maxlength="30" id="id_nickname" class=" TextInput " />
-                        </div>
-                        <div class="Field-message"></div>
-                    </div>
-                    <div class=" Form-item Field CharField ">
-                        <label class=" Field-label" for="id_msisdn">Msisdn:</label>
-                        <div class="Field-item"> 
-                            <input type="text" name="msisdn" maxlength="16" id="id_msisdn" class=" TextInput " />
-                        </div>
-                        <div class="Field-message"></div>
-                    </div>
-                    <div class=" Form-item Field TypedChoiceField ">
-                        <label class=" Field-label" for="id_gender">Gender:</label>
-                        <div class="Field-item"> 
-                            <select name="gender" id="id_gender" class=" Select ">
-                                <option value="" selected>---------</option>
-                                <option value="female">Female</option>
-                                <option value="male">Male</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="Field-message"></div>
-                    </div>
-                    <div class=" Form-item Field DateField ">
-                        <label class=" Field-label" for="id_birth_date">Birth date:</label>
-                        <div class="Field-item"> 
-                            <input type="text" name="birth_date" class="vDateField AdminDateWidget " size="10" help_text="Please use dd/mm/yyyy format" id="id_birth_date" />
-                        </div>
-                        <div class="Field-message">Please use dd/mm/yyyy format</div>
-                    </div>
-                    <div class=" Form-item Field IntegerField ">
-                        <label class=" Field-label" for="id_age">Age:</label>
-                        <div class="Field-item"> 
-                            <input type="number" name="age" min="1" max="100" id="id_age" class=" NumberInput " />
-                        </div>
-                        <div class="Field-message"></div>
-                    </div>
-                    <div class=" Form-item Field ModelChoiceField ">
-                        <label class=" Field-label" for="id_country">Country:</label>
-                        <div class="Field-item"> 
-                            <select name="country" id="id_country" class=" Select ">
-                                <option value="" selected>---------</option>
-                            </select>
-                        </div>
-                        <div class="Field-message"></div>
-                    </div>
-                    <div class=" Form-item Field ImageField ">
-                        <label class=" Field-label" for="id_avatar">Avatar:</label>
-                        <div class="Field-item"> 
-                            <input type="file" name="avatar" id="id_avatar" class=" ClearableFileInput " />
-                        </div>
-                        <div class="Field-message"></div>
-                    </div>
-                    <div class="required Form-item Field CharField  Field--required ">
-                        <label class=" Field-label required" for="id_password1">Password:</label>
-                        <div class="Field-item"> 
-                            <input type="password" name="password1" help_text="" required="required" id="id_password1" class=" PasswordInput " />
-                        </div>
-                        <div class="Field-message"></div>
-                    </div>
-                    <div class="required Form-item Field CharField  Field--required ">
-                        <label class=" Field-label required" for="id_password2">Password confirmation:</label>
-                        <div class="Field-item"> 
-                            <input type="password" name="password2" required="required" id="id_password2" class=" PasswordInput " />
-                        </div>
-                        <div class="Field-message">Enter the same password as before, for verification.</div>
-                    </div>
-                    <div>
-                        <div class=" Form-item Field ModelChoiceField  Field--required ">
-                            <label class=" Field-label" for="id_form-0-question">Question:</label>
+                    <form action="" method="post" class="Form">
+                        <div class="required Form-item Field CharField  Field--required ">
+                            <label class=" Field-label required" for="id_username">Username:</label>
                             <div class="Field-item"> 
-                                <select name="form-0-question" id="id_form-0-question" required="required" class=" Select ">
-                                    <option value="" selected>Select a question</option>
-                                    <option value="1">What is your favourite colour?</option>
-                                    <option value="2">What is your mother&#39;s maiden name?</option>
+                                <input type="text" name="username" maxlength="150" autofocus required="required" id="id_username" class=" TextInput " />
+                            </div>
+                            <div class="Field-message">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</div>
+                        </div>
+                        <div class=" Form-item Field CharField ">
+                            <label class=" Field-label" for="id_first_name">First name:</label>
+                            <div class="Field-item"> 
+                                <input type="text" name="first_name" maxlength="30" id="id_first_name" class=" TextInput " />
+                            </div>
+                            <div class="Field-message"></div>
+                        </div>
+                        <div class=" Form-item Field CharField ">
+                            <label class=" Field-label" for="id_last_name">Last name:</label>
+                            <div class="Field-item"> 
+                                <input type="text" name="last_name" maxlength="30" id="id_last_name" class=" TextInput " />
+                            </div>
+                            <div class="Field-message"></div>
+                        </div>
+                        <div class=" Form-item Field EmailField ">
+                            <label class=" Field-label" for="id_email">Email address:</label>
+                            <div class="Field-item"> 
+                                <input type="email" name="email" maxlength="254" id="id_email" class=" EmailInput " />
+                            </div>
+                            <div class="Field-message"></div>
+                        </div>
+                        <div class=" Form-item Field CharField ">
+                            <label class=" Field-label" for="id_nickname">Nickname:</label>
+                            <div class="Field-item"> 
+                                <input type="text" name="nickname" maxlength="30" id="id_nickname" class=" TextInput " />
+                            </div>
+                            <div class="Field-message"></div>
+                        </div>
+                        <div class=" Form-item Field CharField ">
+                            <label class=" Field-label" for="id_msisdn">Msisdn:</label>
+                            <div class="Field-item"> 
+                                <input type="text" name="msisdn" maxlength="16" id="id_msisdn" class=" TextInput " />
+                            </div>
+                            <div class="Field-message"></div>
+                        </div>
+                        <div class=" Form-item Field TypedChoiceField ">
+                            <label class=" Field-label" for="id_gender">Gender:</label>
+                            <div class="Field-item"> 
+                                <select name="gender" id="id_gender" class=" Select ">
+                                    <option value="" selected>---------</option>
+                                    <option value="female">Female</option>
+                                    <option value="male">Male</option>
+                                    <option value="other">Other</option>
                                 </select>
                             </div>
                             <div class="Field-message"></div>
                         </div>
-                        <div class=" Form-item Field CharField  Field--required ">
-                            <label class=" Field-label" for="id_form-0-answer">Answer:</label>
+                        <div class=" Form-item Field DateField ">
+                            <label class=" Field-label" for="id_birth_date">Birth date:</label>
                             <div class="Field-item"> 
-                                <textarea name="form-0-answer" cols="40" rows="10" id="id_form-0-answer" required="required" class=" Textarea "></textarea>
+                                <input type="text" name="birth_date" class="vDateField AdminDateWidget " size="10" help_text="Please use dd/mm/yyyy format" id="id_birth_date" />
+                            </div>
+                            <div class="Field-message">Please use dd/mm/yyyy format</div>
+                        </div>
+                        <div class=" Form-item Field IntegerField ">
+                            <label class=" Field-label" for="id_age">Age:</label>
+                            <div class="Field-item"> 
+                                <input type="number" name="age" min="1" max="100" id="id_age" class=" NumberInput " />
                             </div>
                             <div class="Field-message"></div>
                         </div>
-                        <div class=" Form-item Field ModelChoiceField  Field--required ">
-                            <label class=" Field-label" for="id_form-1-question">Question:</label>
+                        <div class=" Form-item Field ModelChoiceField ">
+                            <label class=" Field-label" for="id_country">Country:</label>
                             <div class="Field-item"> 
-                                <select name="form-1-question" id="id_form-1-question" required="required" class=" Select ">
-                                    <option value="" selected>Select a question</option>
-                                    <option value="1">What is your favourite colour?</option>
-                                    <option value="2">What is your mother&#39;s maiden name?</option>
+                                <select name="country" id="id_country" class=" Select ">
+                                    <option value="" selected>---------</option>
                                 </select>
                             </div>
                             <div class="Field-message"></div>
                         </div>
-                        <div class=" Form-item Field CharField  Field--required ">
-                            <label class=" Field-label" for="id_form-1-answer">Answer:</label>
+                        <div class=" Form-item Field ImageField ">
+                            <label class=" Field-label" for="id_avatar">Avatar:</label>
                             <div class="Field-item"> 
-                                <textarea name="form-1-answer" cols="40" rows="10" id="id_form-1-answer" required="required" class=" Textarea "></textarea>
+                                <input type="file" name="avatar" id="id_avatar" class=" ClearableFileInput " />
                             </div>
                             <div class="Field-message"></div>
                         </div>
-                    </div>
+                        <div class="required Form-item Field CharField  Field--required ">
+                            <label class=" Field-label required" for="id_password1">Password:</label>
+                            <div class="Field-item"> 
+                                <input type="password" name="password1" help_text="" required="required" id="id_password1" class=" PasswordInput " />
+                            </div>
+                            <div class="Field-message"></div>
+                        </div>
+                        <div class="required Form-item Field CharField  Field--required ">
+                            <label class=" Field-label required" for="id_password2">Password confirmation:</label>
+                            <div class="Field-item"> 
+                                <input type="password" name="password2" required="required" id="id_password2" class=" PasswordInput " />
+                            </div>
+                            <div class="Field-message">Enter the same password as before, for verification.</div>
+                        </div>
+                        <div>
+                            <div class=" Form-item Field ModelChoiceField  Field--required ">
+                                <label class=" Field-label" for="id_form-0-question">Question:</label>
+                                <div class="Field-item"> 
+                                    <select name="form-0-question" id="id_form-0-question" required="required" class=" Select ">
+                                        <option value="" selected>Select a question</option>
+                                        <option value="1">What is your favourite colour?</option>
+                                        <option value="2">What is your mother&#39;s maiden name?</option>
+                                    </select>
+                                </div>
+                                <div class="Field-message"></div>
+                            </div>
+                            <div class=" Form-item Field CharField  Field--required ">
+                                <label class=" Field-label" for="id_form-0-answer">Answer:</label>
+                                <div class="Field-item"> 
+                                    <textarea name="form-0-answer" cols="40" rows="10" id="id_form-0-answer" required="required" class=" Textarea "></textarea>
+                                </div>
+                                <div class="Field-message"></div>
+                            </div>
+                            <div class=" Form-item Field ModelChoiceField  Field--required ">
+                                <label class=" Field-label" for="id_form-1-question">Question:</label>
+                                <div class="Field-item"> 
+                                    <select name="form-1-question" id="id_form-1-question" required="required" class=" Select ">
+                                        <option value="" selected>Select a question</option>
+                                        <option value="1">What is your favourite colour?</option>
+                                        <option value="2">What is your mother&#39;s maiden name?</option>
+                                    </select>
+                                </div>
+                                <div class="Field-message"></div>
+                            </div>
+                            <div class=" Form-item Field CharField  Field--required ">
+                                <label class=" Field-label" for="id_form-1-answer">Answer:</label>
+                                <div class="Field-item"> 
+                                    <textarea name="form-1-answer" cols="40" rows="10" id="id_form-1-answer" required="required" class=" Textarea "></textarea>
+                                </div>
+                                <div class="Field-message"></div>
+                            </div>
+                        </div>
 
-                    <div class="Form-buttons">
-                        <input type="submit" value="Register" class="Button" />
-                    </div>
-                </form>
+                        <div class="Form-buttons">
+                            <input type="submit" value="Register" class="Button" />
+                        </div>
+                    </form>
 
-            </div><!--/content-->
-            
-            <div id="footer" class="Footer">
-                <p>&copy; Girl Effect | Company No.07516619 | Charity No.1141155</p>
-            </div><!--/footer-->
-            
-        </div><!--/container-->
+                </div><!--/content-->
+                
+                <div id="footer" class="Footer">
+                    <p>&copy; Girl Effect | Company No.07516619 | Charity No.1141155</p>
+                </div><!--/footer-->
+                
+            </div><!--/container-->
+        </div><!--/wrap-->
     </body>
 </html>
